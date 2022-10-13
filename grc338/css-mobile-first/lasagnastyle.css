@@ -8,11 +8,11 @@ img {
 }
 
 body {
-	background-color: rgb(250,250,250); 
+    background-color: rgb(250,250,250); 
 }
 
 h1 {
-	background-color: rgb(242,135,59);
+    background-color: rgb(242,135,59);
     color: rgb(255, 250, 242); 
     padding: 0.675rem 0rem;
     font-family: Sutro, serif;  
@@ -22,12 +22,12 @@ h1 {
 }
 
 h2 {
-	background-color: rgb(242,135,59);
-	color: rgb(251,220,187);
+    background-color: rgb(242,135,59);
+    color: rgb(251,220,187);
     font-family: Sutro, serif;  
     font-weight: 300;  
     font-style: normal;
-	font-size: 1.66rem;
+    font-size: 1.66rem;
 }
 
 h3 {
@@ -37,8 +37,8 @@ h3 {
     font-weight: 300;  
     font-style: normal;
     font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
 }
 
 li { 
