@@ -55,7 +55,6 @@ li {
 
 ol {
     list-style-type: decimal;
-    padding-bottom: 2.625rem;
 }
 
 ul {
@@ -95,12 +94,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
-    margin: 2.625rem 0.875rem;
+    margin: 3rem 0.875rem;
 }
 
 div.container {
     margin: auto;
-    max-width: 70em;
+    max-width: 70rem;
 }
 
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
