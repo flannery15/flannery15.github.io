@@ -96,7 +96,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
-    margin-top: 1.875rem;
+    margin: 1.875rem 0.875rem;
 }
 
 div.container {
