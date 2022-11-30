@@ -1,0 +1,142 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-top: 1.5rem;
+}
+
+p {
+    padding: 0.2rem 0rem;
+}
+
+video {
+    position: absolute;
+    width: 160%;
+}
+
+.vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(11, 15, 17);
+}
+
+.container {
+    color: rgb(179, 201, 199);  
+    margin: 0rem 2rem 2rem;
+}
+
+header {
+    padding: 1rem 2rem 1.1rem;
+    background-color: rgb(11, 15, 17, 0.9);
+    display: grid;
+    grid-template-columns: 30% auto 14rem;
+    font-family: good-times, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+nav {
+    grid-column: 3/4;
+    text-decoration: none;
+    align-self: end;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0rem 0.1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(179, 201, 199); 
+}
+
+nav ul li a:hover {
+    color: rgb(122, 148, 150); 
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0.4rem 1rem;
+}
+
+h1 {
+    grid-column: 1/2;
+}
+
+h2{
+    font-family: good-times, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-bottom: 0.05rem;
+    letter-spacing: 0.06rem;
+    border-top: 1.7px solid rgb(179, 201, 199); 
+    border-bottom: 1.7px solid rgb(179, 201, 199); 
+}
+
+h3, h4, p {
+    font-family: greycliff-cf, sans-serif;
+    font-style: normal;
+    line-height: 1.3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight:700;
+    padding: 1rem 0rem 0.6rem;
+    color: rgb(122, 148, 150); 
+}
+
+h4 {
+    font-weight:600
+}
+
+.menu {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.beers img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.beers {
+    text-align: center;
+    gap: 2rem 7rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 40rem){
+    .beers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    video {
+        width: 140%;
+    }
+}
+
+@media screen and (min-width: 60rem){
+    .beers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    video {
+        width: 100%;
+    }
+}
