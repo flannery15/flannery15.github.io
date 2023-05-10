@@ -5,6 +5,7 @@ body {
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    background: #f0f0ff;
     color: #24171C;
 }
 
@@ -23,6 +24,10 @@ img {
     padding-top: 1rem;
 }
 
+h1, h2, h3, p, figcaption {
+    margin: 0rem 0.75rem;
+}
+
 h1 {
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
@@ -30,22 +35,30 @@ h1 {
 
 h2 {
     font-family: rift-soft, sans-serif;
-    margin: 0.5rem 0rem 0.5rem;
+    padding: 0.5rem 0rem 0.5rem;
     font-size: 2rem;
     font-weight: 700;
 }
 
 h3 {
     font-family: rift-soft, sans-serif;
-    margin: 1rem 0rem 0.3rem;
+    padding: 1rem 0rem 0.3rem;
     font-size: 1.6rem;
     font-weight: 700;
     font-style: normal;
 }
 
 li{
+    font-family: rift-soft, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
     display: inline;
     padding: 0.45rem;
+}
+
+li a {
+    color:  #604D53;
 }
 
 p {
@@ -55,6 +68,7 @@ p {
 ul {
     list-style-type: none;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 section {
