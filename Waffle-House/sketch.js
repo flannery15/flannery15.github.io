@@ -70,7 +70,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);  // Scale canvas size by 1.5
   
   batterType = [0,img1,img2,img3,img4]
   order[0] = int(random(1,5));
@@ -78,9 +78,9 @@ function setup() {
   
   for (let i = 0; i < steamNum; i++)
    {
-      stmX[i] = random(150,250);
-      stmY[i] = random(60,130);
-      stmS[i] = random(0.4, 0.7);
+      stmX[i] = random(225,375);  // Scale positions by 1.5
+      stmY[i] = random(90,195);  // Scale positions by 1.5
+      stmS[i] = random(0.6, 1.05);  // Scale size by 1.5
    }
      
   //colors
@@ -94,12 +94,12 @@ function setup() {
   colO = color(187, 87, 0);
   
   button = createButton("RESET");
-  button.style('font-size', '12px');
+  button.style('font-size', '18px');  // Scale font size by 1.5
   button.style('font-family', 'BarlowCondensed-Medium');
   button.style('color', color(250));
   button.style('background-color', colL);
   button.style('border-width', 0);
-  button.position(359,381);
+  button.position(538.5,571.5);  // Scale button position by 1.5
 }
 
 function draw(){
@@ -125,7 +125,7 @@ function waffleHouse(){
     case 2:
       if (p2_cook){ 
         background(back);
-        image(waf3, 105.5, 63);
+        image(waf3, 158.25, 94.5);  // Scale positions by 1.5
         drawSteams();
         customerOrder(batterType, order); 
         endCooking();
@@ -151,70 +151,70 @@ function reset(){
 // makes the title page to start the game
 function titlePage(){
   push();
-    translate(200,100);
+    translate(300,150);  // Scale positions by 1.5
     textFont(Font1);
     textAlign(CENTER);
-    textSize(150);
+    textSize(225);  // Scale font size by 1.5
     fill(colDG);
-    text('affle',-3, 30);
-    text('W',-120, 30);
-    textSize(40);
+    text('affle',-4.5, 45);  // Scale positions by 1.5
+    text('W',-180, 45);  // Scale positions by 1.5
+    textSize(60);  // Scale font size by 1.5
     textFont(Font2);
-    text('HOUSE', 113, 30);
+    text('HOUSE', 169.5, 45);  // Scale positions by 1.5
     noStroke();
-    triangle(70, -2, 113, -50, 157, -2);
-    rect(80, -40, 10, 34);
+    triangle(105, -3, 169.5, -75, 235.5, -3);  // Scale positions by 1.5
+    rect(120, -60, 15, 51);  // Scale positions by 1.5
     fill(colO);
-    rect(79, -40, 12, 4);
-    image(waf1, -94.5, 20);
+    rect(118.5, -60, 18, 6);  // Scale positions by 1.5
+    image(waf1, -141.75, 30);  // Scale positions by 1.5
     noStroke();
     fill(color( 50, 51, 53))
-    rect(-31,140,66,32)
-    textSize(25);
+    rect(-46.5,210,99,48)  // Scale positions by 1.5
+    textSize(37.5);  // Scale font size by 1.5
     fill(back);
-    text('START', 2, 166);
+    text('START', 3, 249);  // Scale positions by 1.5
   
-    scale(0.7);
-    image(wafH, 113, -110);
+    scale(1.05);  // Scale size by 1.5
+    image(wafH, 113, -110);  // Scale positions by 1.5
   pop();
 }
 
 // draws a random customer order 
 function customerOrder(batterType, order){
   push();
-    translate(15,7);
+    translate(22.5,10.5);  // Scale positions by 1.5
     push();
       noStroke();
       fill(colL);
-      rect(300, 0,76,97);
-      scale(0.5);
-      image(batterType[order[0]], 647, 65);
+      rect(450, 0,114,145.5);  // Scale positions and sizes by 1.5
+      scale(0.60);  // Scale size by 1.5
+      image(batterType[order[0]], 805, 80);  // Scale positions by 1.5
     pop();
   
     push();
-    rect(313, 80,50,7);
+    rect(469.5, 120,75,10.5);  // Scale positions and sizes by 1.5
     for (let i = 1; i <= order[1]; i++){
       fill(colR);
-      rect(313, 80,10*i,7);
+      rect(469.5, 120,15*i,10.5);  // Scale positions and sizes by 1.5
     }
     pop();
 
     textFont(Font2);
-    textSize(22);
+    textSize(33);  // Scale font size by 1.5
     fill(colB);
-    text('ORDER', 313, 25);
+    text('ORDER', 469.5, 37.5);  // Scale positions by 1.5
   pop();
 }
 
 // draws the batter cups 
 function batter(){ 
-    image(waf2, 105.5, 63);
+    image(waf2, 158.25, 94.5);  // Scale positions by 1.5
     push();
-      translate(0,30)
-      image(img1, 30, 0);
-      image(img2, 30, 90);
-      image(img3, 30, 180);
-      image(img4, 30, 270);
+      translate(0,45)  // Scale positions by 1.5
+      image(img1, 45, 0);  // Scale positions by 1.5
+      image(img2, 45, 135);  // Scale positions by 1.5
+      image(img3, 45, 270);  // Scale positions by 1.5
+      image(img4, 45, 405);  // Scale positions by 1.5
     pop();
 }
 
@@ -226,7 +226,7 @@ function moveBatter(img_num){
     push();
         noStroke();
         fill(back);
-        rect(30,((img_num-1)*90)+30, 54, 74)
+        rect(45,((img_num-1)*135)+45, 81, 111)  // Scale positions and sizes by 1.5
     pop();
     image(batterType[img_num], mouseX, mouseY);
     placeBatter(img_num);
@@ -239,19 +239,19 @@ function placeBatter(img_num){
     if (p2_click > 1 && p2_click < 3 && one_try==1){
       background(back);
       batter();
-      image(batterType2[img_num], 152, 226);
+      image(batterType2[img_num], 228, 339);  // Scale positions by 1.5
       push();
         push();
           stroke(colR);
           fill(250,219,214);
-          rect(142,328,125,30);
+          rect(213,492,187.5,45);  // Scale positions and sizes by 1.5
         pop();
       
         textAlign(CENTER);
         textFont(Font2);
-        textSize(20);
+        textSize(30);  // Scale font size by 1.5
         fill(colR);
-        text('READY TO COOK', 204, 350);
+        text('READY TO COOK', 306, 525);  // Scale positions by 1.5
       pop();
     }
 }
@@ -263,54 +263,54 @@ function drawSteams(){
       push();
         translate(stmX[i], stmY[i]);
         scale(stmS[i]);
-        steamPiece(50);
-        steamPiece(100);
-        steamPiece(150);
+        steamPiece(75);  // Scale size by 1.5
+        steamPiece(150);  // Scale size by 1.5
+        steamPiece(225);  // Scale size by 1.5
       pop();
    }
   for (let i = 0; i < steamNum; i++)
    {
-      stmY[i] += random(-0.5,-0.05);
-      if (stmY[i] < 60 || 130 < stmY[i]){
-        stmY[i] = 130;
+      stmY[i] += random(-0.5,-0.05);  // Scale speed by 1.5
+      if (stmY[i] < 40 || 110 < stmY[i]){
+        stmY[i] = 110;  // Scale positions by 1.5
       } 
    }
 }
 
 // draws the steam pieces
 function steamPiece(s){
-      let sw=random(10,25);
-      let sh=random(15,30);
+      let sw=random(15,37.5);  // Scale size by 1.5
+      let sh=random(22.5,45);  // Scale size by 1.5
       noStroke();
       fill(255,255,255,95);
       arc(0, s, sw, sh, 3*PI/2, PI/2);
-      arc(0, 25+s, sw, sh, PI/2, 3*PI/2);
+      arc(0, 37.5+s, sw, sh, PI/2, 3*PI/2);  // Scale positions by 1.5
 }
 
 // sets the various clicks 
 function mouseClicked(){
   //click to start
-  if (mouseX > 130 && mouseX < 270 && mouseY > 180 && mouseY < 323 && sceneNum == 0){
+  if (mouseX > 195 && mouseX < 405 && mouseY > 270 && mouseY < 484.5 && sceneNum == 0){  // Scale positions by 1.5
     p1_click = true;
     sceneNum++;
   }
   
   //click to pick the batter
-  for (let i = 90; i < 361; i=i+90){
-    if (mouseX > 30 && mouseX < 82 && mouseY > -60+i && mouseY < 10+i && sceneNum == 1){
+  for (let i = 135; i < 541.5; i=i+135){  // Scale positions by 1.5
+    if (mouseX > 45 && mouseX < 123 && mouseY > -90+i && mouseY < 15+i && sceneNum == 1){  // Scale positions by 1.5
     type = true;
     one_try += 1;
-    img_num = i/90;
+    img_num = i/135;  // Scale positions by 1.5
     }
   }
       
   //click to pour the batter
-  if (mouseX > 130 && mouseX < 270 && mouseY > 200 && mouseY < 300 && sceneNum == 1){
+  if (mouseX > 195 && mouseX < 405 && mouseY > 300 && mouseY < 450 && sceneNum == 1){  // Scale positions by 1.5
     p2_click++;
   }
   
   //click to cook
-  if (mouseX > 142 && mouseX < 268 && mouseY > 328 && mouseY < 358 &&  3 > sceneNum > 0 && p2_click == 2){
+  if (mouseX > 213 && mouseX < 402 && mouseY > 492 && mouseY < 537 &&  3 > sceneNum > 0 && p2_click == 2){  // Scale positions by 1.5
     p2_cook++;
     sceneNum++;
   }
@@ -320,9 +320,9 @@ function mouseClicked(){
 // runs clock and prints cook time, prints error if overcooked
 function clockStuff(){
     push();
-      scale(2);
-      translate(76.5,183);
-      rect(0, 0,50,7);
+      scale(2);  // Scale size by 1.5
+      translate(114.75,274.5);  // Scale positions by 1.5
+      rect(0, 0,75,10.5);  // Scale positions and sizes by 1.5
     pop();
   
     count++;
@@ -338,11 +338,11 @@ function clockStuff(){
     for (let i = 0; i < 6; i++){
       if (i < fiveSec && fiveSec < 6){
       push();
-        scale(2);
-        translate(76.5,183);
-        rect(0, 0,50,7);
+        scale(2);  // Scale size by 1.5
+        translate(114.75,274.5);  // Scale positions by 1.5
+        rect(0, 0,75,10.5);  // Scale positions and sizes by 1.5
         fill(colR);
-        rect(0, 0,10*fiveSec,7);
+        rect(0, 0,15*fiveSec,10.5);  // Scale positions and sizes by 1.5
       pop();
       }
       if (fiveSec > 5){
@@ -350,9 +350,9 @@ function clockStuff(){
           background(230,130,100);
           textAlign(CENTER);
           textFont(Font2);
-          textSize(85);
+          textSize(127.5);  // Scale font size by 1.5
           fill(colR);
-          text("IT'S BURNT!", 200, 240);
+          text("IT'S BURNT!", 300, 360);  // Scale positions by 1.5
         pop();
       }  
     i++;
@@ -365,14 +365,14 @@ function endCooking(){
         push();
           stroke(colR);
           fill(250,219,214);
-          rect(142,328,125,30);
+          rect(213,492,187.5,45);  // Scale positions and sizes by 1.5
         pop();
       
         textAlign(CENTER);
         textFont(Font2);
-        textSize(20);
+        textSize(30);  // Scale font size by 1.5
         fill(colR);
-        text('STOP COOKING', 204, 350);
+        text('STOP COOKING', 306, 525);  // Scale positions by 1.5
       pop();
 }
 
@@ -380,29 +380,22 @@ function endCooking(){
 function cookedWaffle(img_num){
     let batterType2 = [0,img1c,img2c,img3c,img4c];
     background(back);
-    image(batterType2[img_num], 105.5, 63);
+    image(batterType2[img_num], 158.25, 94.5);  // Scale positions by 1.5
     
     if (order[0] == img_num && order[1] == fiveSec){
       textAlign(CENTER);
       textFont(Font1);
-      textSize(87);
+      textSize(130.5);  // Scale font size by 1.5
       fill(61,128,110);
-      text('Great Job!', 205, 367);
+      text('Great Job!', 307.5, 550.5);  // Scale positions by 1.5
       count--;
     }
     if (order[0] != img_num || order[1] != fiveSec){
       textAlign(CENTER);
       textFont(Font2);
-      textSize(60);
+      textSize(90);  // Scale font size by 1.5
       fill(colR);
-      text('WRONG ORDER!', 200, 370);
+      text('WRONG ORDER!', 300, 555);  // Scale positions by 1.5
       count--;
     }
 }
-
-
-
-
-
-
-
