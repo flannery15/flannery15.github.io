@@ -66,7 +66,7 @@ function preload() {
   img4c = loadImage("iron_yellow-01.png");
   
   Font1 = loadFont('Sensations and Qualities.ttf');
-  Font2 = loadFont('BarlowCondensed-Medium.ttf');
+  Font2 = loadFont('HvDTrial_Brevia-SemiBold-BF6493a40662f78.otf');
 }
 
 function setup() {
@@ -95,7 +95,7 @@ function setup() {
   
   button = createButton("RESET");
   button.style('font-size', '18px');  // Scale font size by 1.5
-  button.style('font-family', 'BarlowCondensed-Medium');
+  button.style('font-family', 'HvDTrial_Brevia-SemiBold-BF6493a40662f78.otf');
   button.style('color', color(250));
   button.style('background-color', colL);
   button.style('border-width', 0);
