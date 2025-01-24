@@ -95,7 +95,7 @@ function setup() {
   
   button = createButton("RESET");
   button.style('font-size', '18px');  // Scale font size by 1.5
-  button.style('font-family', 'Font2');
+  button.style('font-family', Font2);
   button.style('color', color(250));
   button.style('background-color', colL);
   button.style('border-width', 0);
