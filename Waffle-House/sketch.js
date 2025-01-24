@@ -158,7 +158,7 @@ function titlePage(){
     fill(colDG);
     text('affle',-4.5, 45);  // Scale positions by 1.5
     text('W',-180, 45);  // Scale positions by 1.5
-    textSize(60);  // Scale font size by 1.5
+    textSize(40);  // Scale font size by 1.5
     textFont(Font2);
     text('HOUSE', 169.5, 45);  // Scale positions by 1.5
     noStroke();
