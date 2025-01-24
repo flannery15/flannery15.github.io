@@ -66,7 +66,7 @@ function preload() {
   img4c = loadImage("iron_yellow-01.png");
   
   Font1 = loadFont('Sensations and Qualities.ttf');
-  Font2 = loadFont('HvDTrial_Brevia-SemiBold-BF6493a40662f78.otf');
+  Font2 = loadFont('BarlowCondensed-Medium.ttf');
 }
 
 function setup() {
@@ -95,7 +95,7 @@ function setup() {
   
   button = createButton("RESET");
   button.style('font-size', '18px');  // Scale font size by 1.5
-  button.style('font-family', 'HvDTrial_Brevia-SemiBold-BF6493a40662f78.otf');
+  button.style('font-family', 'BarlowCondensed-Medium.ttf');
   button.style('color', color(250));
   button.style('background-color', colL);
   button.style('border-width', 0);
@@ -158,7 +158,7 @@ function titlePage(){
     fill(colDG);
     text('affle',-4.5, 45);  // Scale positions by 1.5
     text('W',-180, 45);  // Scale positions by 1.5
-    textSize(40);  // Scale font size by 1.5
+    textSize(60);  // Scale font size by 1.5
     textFont(Font2);
     text('HOUSE', 169.5, 45);  // Scale positions by 1.5
     noStroke();
