@@ -4,7 +4,9 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 img {
     width: 100%;
 }
-
+head {
+    background-color: rgb(11, 15, 17);
+}
 figure {
     padding-top: 1.5rem;
 }
