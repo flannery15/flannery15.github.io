@@ -41,7 +41,7 @@ body {
 }
 
 header {
-    padding: 1rem 2rem 1.1rem;
+    padding: 2rem 2rem 1.1rem;
     background-color: rgb(11, 15, 17, 0.9);
     display: grid;
     grid-template-columns: 35% auto 14rem;
