@@ -141,7 +141,7 @@ ul.beers {
     background-size: 0.6rem 0.12rem;
     background-repeat: repeat-x;
 }
-@media screen and (min-width: 17.5rem){
+@media screen and (max-width: 17.5rem){
     header {
         font-size: 0.7rem;
     }
