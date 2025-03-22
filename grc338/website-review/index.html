@@ -12,10 +12,18 @@
    </head>
    <body>
       <div class="vid">
-         <video width="auto" loop autoplay muted>
-            <source src="aerial_video.mp4" type="video/mp4">
-            Your browser does not support video tag.
+         <video id="myVideo" width="auto" loop muted>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
          </video>
+
+         <script>
+           const video = document.getElementById('myVideo');
+           video.addEventListener('canplaythrough', () => {
+             video.play();
+           });
+           video.preload = 'auto';
+         </script>
       </div>
       <header>
          <h1><a href="index.html"><img src="images/overhead-slam-logo.png" alt="Overhead Slam Logo."></a></h1>
