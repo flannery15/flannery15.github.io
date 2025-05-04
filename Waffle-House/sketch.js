@@ -395,7 +395,7 @@ function cookedWaffle(img_num){
       textAlign(CENTER);
       textFont(Font1);
       textSize(130.5);
-      fill(61,128,110);
+      fill(colDG);
       text('Great Job!', 307.5, 550.5);
       count--;
     }
