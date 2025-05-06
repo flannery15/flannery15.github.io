@@ -3397,7 +3397,7 @@ input, select, textarea {
 
 		#header nav {
 			position: absolute;
-			right: 2em;
+			left: 2em;
 			top: 0;
 		}
 
